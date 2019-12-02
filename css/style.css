@@ -1,0 +1,148 @@
+* {
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template: 
+            "top top" 200px
+            "pricing about" 250px;
+  width: 675px;
+  height: 460px;
+  margin: 0 auto;
+  margin-top: 5em;
+  -webkit-box-shadow: -2px 5px 7px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 5px 7px -3px rgba(0,0,0,0.75);
+  box-shadow: -2px 5px 7px -3px rgba(0,0,0,0.75);
+  border-radius: 10px;
+}
+
+.introduction {
+  grid-area: top;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+  padding-left: 40px;
+  padding-top: 10px;
+  height: 250px;
+}
+
+.introduction h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 25px;
+}
+
+.introduction h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+}
+
+.introduction p {
+  color: hsl(218, 22%, 67%);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.pricing {
+  border-radius: 0px 0px 0px 10px;
+  grid-area: pricing;
+  background-color: #2bb3b1;
+  padding-left: 40px;
+  padding-top: 10px;
+  color: white;
+  height: 250px;
+}
+
+.pricing span {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-right: 10px;
+}
+
+.price {
+  color: hsl(204, 43%, 93%);
+}
+
+button {
+  width: 225px;
+  height: 40px;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 10px;
+  border: none;
+  box-shadow: -1px 5px 8px -4px rgba(0,0,0,0.75);
+}
+
+button:hover {
+  background-color: rgba(192, 223, 52, 0.800);
+}
+
+button:active {
+  background-color: #2bb3b1;
+  border: 3px solid hsl(71, 73%, 54%);
+}
+
+.about {
+  border-radius: 0px 0px 10px 0px;
+  grid-area: about;
+  background-color: #4abebd;
+  padding-top: 10px;
+  color: white;
+  height: 250px;
+}
+
+.about h2 {
+  padding-left: 40px;
+}
+
+.about ul {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.800);
+}
+
+@media (min-width: 310px) and (max-width: 450px) {
+  .grid {
+    grid-template: 
+            "top"
+            "pricing"
+            "about";
+    width: 325px;
+    margin: 0 auto;
+    margin-top: 1em;
+    box-shadow: none;
+  }
+
+  .introduction {
+    padding-left: 20px;
+    line-height: 25px;
+  }
+
+  .pricing {
+    padding-left: 25px;
+    border-radius: 0px;
+  }
+
+  button {
+    width: 275px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  .about {
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .about ul {
+    padding-bottom: 10px;
+    line-height: 23px;
+  }
+}
