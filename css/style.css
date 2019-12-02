@@ -6,8 +6,6 @@ body {
   background-color: hsl(204, 43%, 93%);
 }
 
-
-
 .grid {
   display: grid;
   grid-template: 
@@ -25,11 +23,11 @@ body {
 
 .introduction {
   grid-area: top;
+  height: 250px;
   background-color: white;
   border-radius: 10px 10px 0px 0px;
   padding-left: 40px;
   padding-top: 10px;
-  height: 250px;
 }
 
 .introduction h1 {
@@ -49,13 +47,13 @@ body {
 }
 
 .pricing {
-  border-radius: 0px 0px 0px 10px;
   grid-area: pricing;
+  height: 250px;
   background-color: #2bb3b1;
+  color: white;
+  border-radius: 0px 0px 0px 10px;
   padding-left: 40px;
   padding-top: 10px;
-  color: white;
-  height: 250px;
 }
 
 .pricing span {
@@ -113,6 +111,7 @@ button:active {
             "pricing"
             "about";
     width: 325px;
+    height: 650px;
     margin: 0 auto;
     margin-top: 1em;
     box-shadow: none;
@@ -138,6 +137,7 @@ button:active {
   .about {
     height: auto;
     margin-bottom: 25px;
+    padding-top: 5px;
     border-radius: 0px 0px 10px 10px;
   }
 
